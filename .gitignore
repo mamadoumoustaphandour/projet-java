@@ -1,0 +1,33 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+bin/pictures/menuImage/*
+bin/pictures/gameItems/Blue_Cube.jpg
+bin/pictures/gameItems/Bombe.png
+bin/pictures/gameItems/Green_Cube.jpg
+bin/pictures/gameItems/Grey_Cube.jpg
+bin/pictures/gameItems/Red_Cube.jpg
+bin/pictures/gameItems/Flag.jpg
+bin/Sounds/explosion.mp3
+bin/Sounds/explosion.wav
+Settings Files/settings.ini
+bin/pictures/gameItems/defused_bomb.png
