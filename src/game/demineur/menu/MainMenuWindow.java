@@ -111,14 +111,14 @@ public class MainMenuWindow {
 		mntmCurrentprofile.setEnabled(false);
 		mnProfils.add(mntmCurrentprofile);
 
-		JMenuItem mntmParamtres = new JMenuItem("Paramètres");
+		JMenuItem mntmParamtres = new JMenuItem("Paramï¿½tres");
 		mntmParamtres.setAction(action_4);
 		mnDmineur.add(mntmParamtres);
 
 		JSeparator separator_3 = new JSeparator();
 		mnDmineur.add(separator_3);
 
-		JMenuItem mntmRinitialiser = new JMenuItem("Réinitialiser");
+		JMenuItem mntmRinitialiser = new JMenuItem("Rï¿½initialiser");
 		mntmRinitialiser.setAction(action_7);
 		mnDmineur.add(mntmRinitialiser);
 
@@ -128,7 +128,7 @@ public class MainMenuWindow {
 		JMenu mnAide = new JMenu("Aide");
 		menuBar.add(mnAide);
 
-		JMenuItem mntmRglesDuJeu = new JMenuItem("Règles du jeu");
+		JMenuItem mntmRglesDuJeu = new JMenuItem("Rï¿½gles du jeu");
 		mntmRglesDuJeu.setAction(action_3);
 		mnAide.add(mntmRglesDuJeu);
 
@@ -168,7 +168,7 @@ public class MainMenuWindow {
 		txtpnPane.setEditable(false);
 		txtpnPane.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		txtpnPane.setText(
-				"Bienvenue dans le jeu du démineur !\n\nPour commencer une partie cliquez sur le bouton ci-dessous.\n\n\n\n\n\n\n\n\n\n\nLes developpeurs \nAmadou Lamine SARR \nMamadou Moustapha NDOUR \nRobert Emmanuel Mamadou SAGNE ");
+				"Bienvenue dans le jeu du dï¿½mineur dÃ©velopper par les etudiants l'ESP  !\n\nPour commencer une partie cliquez sur le bouton ci-dessous.\n\n\n\n\n\n\n\n\n\n\nLes developpeurs \nAmadou Lamine SARR \nMamadou Moustapha NDOUR \nRobert Emmanuel Mamadou SAGNE \nYacine NDIAYE");
 		frmMenu.getContentPane().add(txtpnPane, BorderLayout.CENTER);
 
 		JEditorPane txtpnJeuDuDmineur = new JEditorPane();
@@ -184,7 +184,7 @@ public class MainMenuWindow {
 	@SuppressWarnings("serial")
 	private class SwingAction extends AbstractAction {
 		public SwingAction() {
-			putValue(NAME, "Démarrer la partie");
+			putValue(NAME, "Dï¿½marrer la partie");
 			putValue(SHORT_DESCRIPTION, "Cliquez ici pour commencer une nouvelle partie.");
 		}
 
@@ -199,12 +199,12 @@ public class MainMenuWindow {
 	@SuppressWarnings("serial")
 	private class SwingAction_1 extends AbstractAction {
 		public SwingAction_1() {
-			putValue(NAME, "A propos des développeurs");
+			putValue(NAME, "A propos des dï¿½veloppeurs");
 		}
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(null, "Mamadou Moustapha NDOUR\n Robert Emmanuel Mamadou SAGNE\n Amadou Lamine SARR\nÉtudiants à l'ESP", "Les developpeurs",
+			JOptionPane.showMessageDialog(null, "Mamadou Moustapha NDOUR\n Robert Emmanuel Mamadou SAGNE\n Amadou Lamine SARR \nYacine NDIAYE\nï¿½tudiants ï¿½ l'ESP", "Les developpeurs",
 					JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
@@ -213,7 +213,7 @@ public class MainMenuWindow {
 	private class SwingAction_2 extends AbstractAction {
 		public SwingAction_2() {
 			putValue(NAME, "Changelog");
-			putValue(SHORT_DESCRIPTION, "Voir les nouveautés");
+			putValue(SHORT_DESCRIPTION, "Voir les nouveautï¿½s");
 		}
 
 		@Override
@@ -224,8 +224,8 @@ public class MainMenuWindow {
 	@SuppressWarnings("serial")
 	private class SwingAction_3 extends AbstractAction {
 		public SwingAction_3() {
-			putValue(NAME, "Règles du jeu");
-			putValue(SHORT_DESCRIPTION, "Afficher les règles du jeu");
+			putValue(NAME, "Rï¿½gles du jeu");
+			putValue(SHORT_DESCRIPTION, "Afficher les rï¿½gles du jeu");
 		}
 
 		@Override
@@ -236,13 +236,13 @@ public class MainMenuWindow {
 	@SuppressWarnings("serial")
 	private class SwingAction_4 extends AbstractAction {
 		public SwingAction_4() {
-			putValue(NAME, "Paramètres");
+			putValue(NAME, "Paramï¿½tres");
 			putValue(SHORT_DESCRIPTION, "Options du jeu");
 		}
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			SettingPopup parametre = new SettingPopup(null, "Paramètre", true, settings);
+			SettingPopup parametre = new SettingPopup(null, "Paramï¿½tre", true, settings);
 			settingData = parametre.showSettingPopup();
 			if (settingData[0] != null && settingData[1] != null && settingData[2] != null) {
 				updateSettingData();
@@ -274,7 +274,7 @@ public class MainMenuWindow {
 				}
 			}
 		} else {
-			JMenuItem menuItem = new JMenuItem("Aucun profil enregistré");
+			JMenuItem menuItem = new JMenuItem("Aucun profil enregistrï¿½");
 			menuItem.setEnabled(false);
 			menuToUpdate.add(menuItem);
 		}
@@ -306,7 +306,7 @@ public class MainMenuWindow {
 	private class SwingAction_6 extends AbstractAction {
 		public SwingAction_6() {
 			putValue(NAME, "Supprimer un profil");
-			putValue(SHORT_DESCRIPTION, "Supprimer les données d'un profil");
+			putValue(SHORT_DESCRIPTION, "Supprimer les donnï¿½es d'un profil");
 		}
 
 		@Override
@@ -337,7 +337,7 @@ public class MainMenuWindow {
 	@SuppressWarnings("serial")
 	private class SwingAction_7 extends AbstractAction {
 		public SwingAction_7() {
-			putValue(NAME, "Réinitialiser");
+			putValue(NAME, "Rï¿½initialiser");
 			putValue(SHORT_DESCRIPTION, "Delete all files");
 		}
 
